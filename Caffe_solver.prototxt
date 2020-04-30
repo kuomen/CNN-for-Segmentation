@@ -1,0 +1,17 @@
+train_net: "train.prototxt"
+
+iter_size: 10
+lr_policy: "poly"
+power: 0.9
+base_lr: 0.00025
+average_loss: 20
+momentum: 0.9
+weight_decay: 0.0005
+
+display: 10
+max_iter: 200000
+
+snapshot: 1000
+snapshot_prefix: "/model/ROI"
+
+solver_mode: GPU
